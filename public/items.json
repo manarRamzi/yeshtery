@@ -1,0 +1,33 @@
+{
+    "items": [
+        {
+            "id": 0,
+            "logo":"./image/adidas.svg",
+            "title":"Adidas black t-shirt",
+            "subTitle":"Adidas black t-shirt lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+            "type": "Men",
+            "rate": "4.9 of 5",
+            "numberOfRate": "22 Rates",
+            "price":"9,999",
+            "size": [
+                "Small",
+                "Medium",
+                "Large",
+                "X Large",
+                "XX Large"
+            ],
+            "img": [
+                "./image/image1.png",
+                "./image/image2.png",
+                "./image/image3.png",
+                "./image/image4.png",
+                "./image/image5.png"
+            ],
+            "color": [
+                "./image/color1.png",
+                "./image/color2.png"
+            ],
+            "discount":"30% off"
+        }
+    ]
+}
