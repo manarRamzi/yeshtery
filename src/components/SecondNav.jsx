@@ -3,14 +3,22 @@ import adidas from "../images/adidas.svg";
 import love from "../images/love.svg";
 import cart2 from "../images/cart2.svg";
 import user from "../images/user.svg";
+import Cart from './Cart';
 export default class SecondNav extends Component {
+  state={
+  show:false,value:""}
+  handleClose=()=>{
+    this.setState({show:false})
+  }
+
   render() {
+    const {show}=this.state
     return (
       <div className=" secondNav ">
         <div className="h-100  d-sm-block d-md-flex align-items-center">
           <div className="container d-sm-block d-md-flex  justify-content-between">
-            <form class="Search_search">
-              <button type="submit" class="Search_search__icon">
+            <form className="Search_search">
+              <button type="submit" className="Search_search__icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24px"
@@ -24,7 +32,9 @@ export default class SecondNav extends Component {
                   ></path>
                 </svg>
               </button>
-              <input type="text" placeholder="Search" class="Search" value="" />
+              <input type="text" placeholder="Search" className="Search" 
+               value={this.state.value}
+                    onChange={(e)=>this.setState({value:e.target.value})} />
             </form>
             <img
               src={adidas}
@@ -35,10 +45,19 @@ export default class SecondNav extends Component {
             />
            
               <div className="d-flex justify-content-between align-items-center nav-button ">
-                <button className="secondNav_btn">
+                <button className="secondNav_btn " 
+                onClick={()=>{
+                  this.setState({show:!show})
+                }}
+                >
+                  <span className=" position-relative">
                   <img src={cart2} alt="phone" className="mx-1" />
+                  <span className="cart_number"> {this.props.counter}</span>
+                  </span>
                   Cart
+                 
                 </button>
+             
                 <button className="secondNav_btn">
                   <img src={love} alt="phone" className="mx-2" />
                   Wishlist
@@ -49,7 +68,8 @@ export default class SecondNav extends Component {
                 </button>
               </div>
             </div>
-         
+            <Cart  placement="end" show={show} handleClose={this.handleClose} data={this.props.data} quabtity={this.props.counter} 
+            remove={()=>this.props.remove()}/>
         </div>
       </div>
     );

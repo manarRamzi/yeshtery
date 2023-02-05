@@ -5,7 +5,7 @@ export default class Navbar extends Component {
   render() {
     return (
       <div className="navbar ">
-        <ul class=" container d-sm-block d-md-flex  justify-content-between my-2">
+        <ul className=" container d-sm-block d-md-flex  justify-content-between my-2">
           <li>
             <Nav.Link href="#">Men</Nav.Link>
           </li>

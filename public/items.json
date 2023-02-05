@@ -29,5 +29,53 @@
             ],
             "discount":"30% off"
         }
+    ],
+    "SimilarProducts":[
+       { 
+            "logo":"./image/adidas.svg",
+            "subTitle":"Adidas black t-shirt lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+            "rate": "4.9 of 5",
+            "price":"9,999",
+            "img":"./image/Similar4.png"  ,
+            "discount":"50% ",
+            "place":"Genena Mall", 
+            "from":""
+           
+        },
+        { 
+            "logo":"./image/adidas.svg",
+            "subTitle":"Adidas black t-shirt lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+            "rate": "4.9 of 5",
+            "price":"9,999",
+            "img":"./image/Similar2.png",
+            "discount":"",
+            "place":"Egypt", 
+            "from":"UK",
+            "in":"10"
+           
+        }, {
+            "logo":"./image/adidas.svg",
+            "subTitle":"Adidas black t-shirt lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+            "rate": "4.9 of 5",
+            "price":"9,999",
+            "img":"./image/Similar3.png",
+            "discount":"30%",
+            "place":"Genena Mall", 
+            "from":"",
+            "in":""
+        },{
+            
+             "logo":"./image/adidas.svg",
+                "subTitle":"Adidas black t-shirt lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "rate": "4.9 of 5",
+                "price":"9,999",
+                "img":"./image/Similar1.png",
+                "discount":"70%",
+                "place":"Egypt", 
+                "from":"Egypt",
+                "in":"10 Days"
+            
+        }
+
     ]
 }

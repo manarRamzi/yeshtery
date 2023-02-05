@@ -1,19 +1,12 @@
 
-import TopNav from './components/TopNav';
 import "./style.css"
-import SecondNav from './components/SecondNav';
-import Navbar from './components/Navbar';
-import Tabs from './components/Tabs';
-import Main from './components/Main';
+import All from './pages/All';
 function App() {
   
   return (
     <div className="App">
-    <TopNav/>
-    <SecondNav/>
-    <Navbar/>
-    <Main/>
-    
+   <All/>
+
     </div>
   );
 }
